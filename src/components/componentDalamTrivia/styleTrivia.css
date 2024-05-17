@@ -1,0 +1,81 @@
+.peta{
+    border:3px solid rgb(75, 29, 29);
+}
+
+/* For mobile phones: */
+.responsive-text {
+    font-size: 16px;
+    margin-top: 0.5em;
+  }
+  
+  /* For tablets: */
+  @media only screen and (min-width: 768px) {
+    .responsive-text {
+      font-size: 13.7px;
+    }
+
+  }
+  
+  /* For desktop: */
+  @media only screen and (min-width: 992px) {
+    .responsive-text {
+      font-size: 16px;
+    }
+  }
+  
+  /* For large screens: */
+  @media only screen and (min-width: 1200px) {
+    .responsive-text {
+      font-size: 20px;
+    }
+  }
+
+  .kotak-form{
+    background-color: rgb(184, 142, 100);
+    padding: 2em;
+  
+  }
+
+
+
+  .fixed-alert {
+    position: fixed;
+    top: 20px; /* Adjust this value to move the alert down */
+    right: 20px; /* Position to the right */
+    z-index: 9999; /* Ensure it sits over other content */
+    width: 90%; /* Default to full width on small screens */
+    max-width: 450px; /* Limit maximum width to 450px on larger screens */
+  }
+  
+  /* Media query for screens larger than 576px */
+  @media (min-width: 576px) {
+    .fixed-alert {
+      width: 75%; /* Adjust width as needed */
+    }
+  }
+  
+  /* Media query for screens larger than 768px */
+  @media (min-width: 768px) {
+    .fixed-alert {
+      width: 60%; /* Adjust width as needed */
+    }
+  }
+  
+  /* Media query for screens larger than 992px */
+  @media (min-width: 992px) {
+    .fixed-alert {
+      width: 45%; /* Adjust width as needed */
+    }
+  }
+  
+  /* Media query for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .fixed-alert {
+      width: 30%; /* Adjust width as needed */
+    }
+  }
+
+
+  
+
+

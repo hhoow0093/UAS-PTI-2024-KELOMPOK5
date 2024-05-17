@@ -1,0 +1,300 @@
+.custom-navbar {
+  background-color: brown;
+}
+
+.word1 {
+  color: red;
+}
+
+.word2 {
+  color: rgb(113, 206, 67);
+}
+
+.word3 {
+  color: green;
+}
+
+.VideoPadaHome {
+  padding: 1em;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  z-index: 1;
+}
+
+.card-hover {
+  width: 40%;
+  height: 40%;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 2rem;
+}
+
+.card-hover .image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card-hover .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card-hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card-hover:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+
+.card-hover:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: medium;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h2,
+.content p {
+  opacity: 0;
+  transition: 0.5s 0.3s ease;
+}
+
+.content h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d1d1;
+  transform: translateY(50%);
+}
+
+.card-hover:hover .content h2 {
+  scale: 1;
+  opacity: 1;
+}
+
+.card-hover:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.satu {
+  background-color: rgb(184, 142, 100);
+  padding: 1%;
+}
+
+.card-satu {
+  display: flex;
+  align-content: flex-start;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  width: 50%;
+  height: 40%;
+}
+
+.card:hover {
+  cursor: pointer;
+  color: rgb(156, 100, 101);
+}
+
+.container-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-image h6 {
+  flex: 1;
+  margin: 1rem;
+  font-family: "Nunito";
+  font-weight: 100;
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container,
+  .card-hover,
+  .card-satu {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 3em;
+  }
+
+  .content {
+      position: static;
+      transform: none;
+      text-align: center;
+  }
+
+  .container-image h6 {
+      font-size: large;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container-image h6 {
+      font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card-container,
+  .card-hover,
+  .card-satu {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 3em;
+  }
+
+  .content {
+      position: static;
+      transform: none;
+      text-align: center;
+  }
+
+  .container-image h6 {
+      font-size: large;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .card-container,
+  .card-hover,
+  .card-satu {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 3em;
+  }
+
+  .content {
+      position: static;
+      transform: none;
+      text-align: center;
+      font-size: smaller;
+  }
+
+  .card-hover:hover {
+      transform: translateY(10px);
+  }
+
+  .container-image h6 {
+      font-size: medium;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .content {
+      font-size: 1em;
+  }
+
+  .container-image h6 {
+      font-size: 1em;
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+  .card-container,
+  .card-hover,
+  .card-satu {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 3em;
+  }
+
+  .content {
+      position: static;
+      transform: none;
+      text-align: center;
+      font-size: 0.2em;
+  }
+
+  .card-hover:hover {
+      transform: translateY(10px);
+  }
+
+  .container-image h6 {
+      font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 935px) { /* adjust the value as needed */
+  .card-hover {
+    margin-top: 20px; /* adjust the value as needed */
+  }
+}
+
+/*contect 2*/
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 3000ms, transform 3000ms;
+}
+
+/* kartu*/
+
+.card-body-custom {
+  height: 300px; /* Adjust this value as needed */
+  overflow: auto; /* Add a scrollbar if the content is too long */
+}
+
+.card-img-custom {
+  height: 200px; /* Adjust this value as needed */
+  object-fit: cover; /* This will ensure the image covers the entire space without stretching */
+}
+
+.card-custom-color {
+  background-color: #c09469; /* This is a brown color. Adjust this value as needed */
+}
+

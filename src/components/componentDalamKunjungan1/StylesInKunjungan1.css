@@ -1,0 +1,33 @@
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.popup-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+
+.Tentangpeta {
+    font-size: 1.5em;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .Tentangpeta {
+      font-size: 1.2em;
+    }
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .Tentangpeta {
+      font-size: 1em;
+    }
+  }

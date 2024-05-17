@@ -28,7 +28,6 @@ function Aboutus() {
       <div>
         <button onClick={getQuote}>New Quote</button>
       </div>
-      <a2 href="https://api.quotable.io/random">SOURCE</a2>
     </div>
   );
 }

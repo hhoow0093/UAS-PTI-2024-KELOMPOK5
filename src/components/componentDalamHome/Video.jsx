@@ -28,7 +28,7 @@ function Video() {
   useEffect(() => {
     function handleResize() {
       if (containerRef.current) {
-        const width = containerRef.current.offsetWidth * 1; // 90% of the container's width
+        const width = containerRef.current.offsetWidth * 0.95; // 90% of the container's width
         const height = `${width / 2}px`;
 
         setOpts({

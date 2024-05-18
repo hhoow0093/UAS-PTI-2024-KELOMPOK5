@@ -1,0 +1,43 @@
+@keyframes zoomOut {
+    0% {
+      transform: scale(2); /* Adjust this value to cover the entire screen */
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1); /* Back to its original size */
+      opacity: 1;
+    }
+  }
+  
+  .modal-dialog {
+    animation: 2s zoomOut;
+  }
+
+  .modal-content{
+    background-color: rgb(184, 142, 100);
+  }
+
+  .custom-modal .modal-dialog {
+
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-title {
+ 
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .custom-image {
+    border-radius: 15px;
+  }
+  
+  .custom-button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-button:hover {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+  }
+

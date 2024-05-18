@@ -1,5 +1,5 @@
 .custom-navbar {
-  background-color: brown;
+  background-color: rgb(113, 68, 68);
 }
 
 .word1 {
@@ -236,7 +236,7 @@
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 376px) {
   .card-container,
   .card-hover,
   .card-satu {
@@ -259,17 +259,16 @@
   }
 
   .container-image h6 {
-      font-size: 0.5em;
+      font-size: 0.7em;
   }
 }
 
-@media screen and (max-width: 935px) { /* adjust the value as needed */
+@media screen and (max-width: 935px) {
   .card-hover {
-    margin-top: 20px; /* adjust the value as needed */
+    margin-top: 20px; 
   }
 }
 
-/*contect 2*/
 
 .fade-enter {
   opacity: 0;
@@ -285,16 +284,16 @@
 /* kartu*/
 
 .card-body-custom {
-  height: 300px; /* Adjust this value as needed */
-  overflow: auto; /* Add a scrollbar if the content is too long */
+  height: 300px; 
+  overflow: auto; 
 }
 
 .card-img-custom {
-  height: 200px; /* Adjust this value as needed */
-  object-fit: cover; /* This will ensure the image covers the entire space without stretching */
+  height: 200px; 
+  object-fit: cover; 
 }
 
 .card-custom-color {
-  background-color: #c09469; /* This is a brown color. Adjust this value as needed */
+  background-color: #c09469; 
 }
 

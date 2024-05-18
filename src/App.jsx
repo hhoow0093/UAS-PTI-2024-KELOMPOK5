@@ -1,6 +1,5 @@
-import {BrowserRouter, Routes, Route, useLocation} from "react-router-dom";
-import { useState, useEffect } from 'react';
-import { Spinner } from 'react-bootstrap';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Aboutus from './page/Aboutus';
 import Home from './page/Home';
 import News from './page/News';
@@ -11,44 +10,15 @@ import Kunjungan3 from "./page/Kunjungan3";
 import Kunjungan4 from "./page/Kunjungan4";
 import Kunjungan5 from "./page/Kunjungan5";
 import Aboutus2 from "./page/Aboutus2";
+import Inspirasi from "./page/Inspirasi";
+import LoadingSpinner from './LoadingSpinner';
 
-function LoadingSpinner() {
-  const location = useLocation();
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => setIsLoading(false), 1000); // Simulate a loading delay
-  }, [location]);
-
-  if (isLoading) {
-    return (
-      <div style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        zIndex: 9999,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
-        <Spinner animation="border" variant="warning" />
-      </div>
-    );
-  }
-
-  return null;
-}
 
 function App() {
   return (
-    <BrowserRouter>
-      <LoadingSpinner />
+    <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Inspirasi />} />
         <Route path="/news" element={<News />} />
         <Route path="/trivia" element={<Trivia />} />
         <Route path="/aboutus" element={<Aboutus />} />
@@ -58,8 +28,10 @@ function App() {
         <Route path = "/kunjungan4" element = {<Kunjungan4/>}/>
         <Route path = "/kunjungan5" element = {<Kunjungan5/>}/>
         <Route path="/aboutus2" element={<Aboutus2 />} />
+        <Route path="/home" element={<Home/>} />
       </Routes>
-    </BrowserRouter>
+      <LoadingSpinner />
+    </Router>
   );
 }
 

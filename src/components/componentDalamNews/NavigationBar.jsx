@@ -44,13 +44,14 @@ function NavigationBar() {
       <Container className="custom-navbar">
         <Navbar expand="lg" data-bs-theme="dark">
           <Container fluid>
-            <Navbar.Brand href="/">Banda Aceh Beauty</Navbar.Brand>
+          <Navbar.Brand href="/home">Banda Aceh Beauty</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/news">News</Nav.Link>
                 <Nav.Link href="/trivia">Trivia</Nav.Link>
                 <Nav.Link href="/aboutus">About us</Nav.Link>
+                <Nav.Link href="/">Log out</Nav.Link>
               </Nav>
               <div className="d-flex flex-column text-end">
                 <Navbar.Brand className="fs-6 fs-lg-4">Current time: {time.toLocaleTimeString()}</Navbar.Brand>

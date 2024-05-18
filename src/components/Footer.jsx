@@ -5,11 +5,11 @@ import { Container } from 'react-bootstrap';
 export default function Footer() {
   return (
     <Container className='mt-3'>
-    <MDBFooter className='text-center text-lg-left' style={{backgroundColor:"brown"}}>
+    <MDBFooter className='text-center text-lg-left' style={{backgroundColor:"rgb(113, 68, 68)"}}>
       <div className='text-center p-3 text-white'>
         Banda-Aceh-beauty
       </div>
-    </MDBFooter>
+    </MDBFooter> 
     </Container>
   );
 }
